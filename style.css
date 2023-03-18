@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Russo One', sans-serif;
+}
+.cabecalho {
+    background-color: #288aa8;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 34px 0;
+}
+.cabecalho-imagem {
+    width: 12%;
+}
+.cabecalho-lista{
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 24px;
+}
+.colegio {
+    font-size:  64px;
+}
+.cblol {
+    width: 20%;
+    padding: 26px 0 30px 28px;
+}
+.escola {
+    background-image: linear-gradient(#288aa8,#11617e );    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.escola-conteudo{
+    width: 40%;
+}    
+.texto1 {
+    font-size: 22px;
+}
+.texto2 {
+    font-size: 22px;
+    padding: 10px 0;
+}
+.escola-title {
+    font-size: 34px;
+    padding: 24px 0 16px    0;
+}
+.estudantes {
+    background:black;
+    color: #ffff;
+}
+.quem-estudantes {
+    font-size: 30px;
+    text-align: center;
+    padding: 46px 0 46px 0;
+}
+.pros1 {
+    border-radius: 50px;
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+    padding: 0 0 0 290px;
+}
+.pros2 {
+    border-radius: 50px;
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+    padding: 0 0 0 200px;
+}
+.texto9 {
+    font-size: 26px;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 0 0 0 290px;
+}
+.texto8 {
+    font-size: 26px;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 0 0 25px 440px;
+}
+.copyright {
+	color: #000000;
+    background-color: rgb(43, 43, 43);
+	font-size: 26px;
+    text-align: center;
+}
