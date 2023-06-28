@@ -1,91 +1,235 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body{  
     font-family: 'Russo One', sans-serif;
-}
-.cabecalho {
     background-color: #288aa8;
-    color: white;
+    color: #FFFFFF;
+}
+
+.header{
+    height: 90vh;
+    padding: 8px 6%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(#288aa8,#004d69 )
+}
+
+.logo{
+    width: 220px;
+    cursor: pointer;
+}
+
+.title{
+    font-size: 60px;
+}
+
+nav{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 20px 0 34px 0;
-}
-.cabecalho-imagem {
-    width: 12%;
-}
-.cabecalho-lista{
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 24px;
-}
-.colegio {
-    font-size:  64px;
-}
-.cblol {
-    width: 20%;
-    padding: 26px 0 30px 28px;
-}
-.escola {
-    background-image: linear-gradient(#288aa8,#11617e );    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.escola-conteudo{
-    width: 40%;
-}    
-.texto1 {
-    font-size: 22px;
-}
-.texto2 {
-    font-size: 22px;
+    justify-content: space-between;
     padding: 10px 0;
 }
-.escola-title {
-    font-size: 34px;
-    padding: 24px 0 16px    0;
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
 }
-.estudantes {
-    background:black;
+
+.escola{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    padding: 7px 10px;
+}
+
+.conteudo{
+    padding: 50px 0;
+    font-size: 22px;
+    color: #000000;
+}
+
+.conteudo h1{
+    margin-bottom: 14px;
+}
+
+.conteudo p{
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.primeiroitem{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+.textocolegio{
+    flex-basis: 50%;
+    margin-bottom: 10px;
+}
+
+.imagemcbl{
+    flex-basis: 50%;
+    margin-bottom: 10px;
+}
+
+.imagemcbl img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+/* Estudantes */
+
+.estudantes{
+    background: #101010;
     color: #ffff;
 }
-.quem-estudantes {
-    font-size: 30px;
+
+.estudantes{
+    background-color: #101010;
+    color: #FFFFFF;
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.estudantes h1{
     text-align: center;
-    padding: 46px 0 46px 0;
+    padding-bottom: 12px;
 }
-.pros1 {
-    border-radius: 50px;
-    display: inline-block;
-    width: 29%;
-    vertical-align: top;
-    padding: 0 0 0 290px;
+
+.textopros h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
-.pros2 {
-    border-radius: 50px;
-    display: inline-block;
-    width: 35%;
-    vertical-align: top;
-    padding: 0 0 0 200px;
+
+.pros {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
 }
-.texto9 {
-    font-size: 26px;
-    margin-top: 10px;
-    display: inline-block;
-    padding: 0 0 0 290px;
+
+.textopros {
+    flex-basis: 50%;
+    margin-bottom: 8px;
 }
-.texto8 {
-    font-size: 26px;
-    margin-top: 10px;
-    display: inline-block;
-    padding: 0 0 25px 440px;
+
+.imagempros {
+    flex-basis: 50%;
+    margin-bottom: 8px;
 }
+
+.imagempros img{
+    border-radius: 30px;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
 .copyright {
 	color: #000000;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(30, 30, 30);
 	font-size: 26px;
     text-align: center;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px){
+    
+    .header{
+        height: 70vh;
+    }
+   
+    .logo{
+        width: 60px;
+    }  
+
+    .title{
+        font-size: 12px;
+        font-weight: 80;
+    }
+
+    nav button{
+        padding: 5px 10px;
+    }
+
+    nav button{
+        padding: 2px 2px;
+        font-size: 10px;
+    }
+    
+    .conteudo{
+        position: unset;
+        transform: none;
+        padding-top: 2px;
+    }
+
+    .conteudo h1{
+        font-size: 20px;
+    }
+
+    .conteudo p{
+        font-size: 15px;
+    }
+    
+    .textocolegio{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .imagemcbl{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .imagemcbl img{
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+
+    .estudantes{
+        font-size: 12px;
+        padding: 16px 6%;
+    }
+
+    .textopros, .imagempros{
+        flex-basis: 100%;
+    }
+
+    .textopros h1{
+        font-size: 25px;
+    }
+
+    .pros{
+        padding: 16px 0 0 0;
+    }
+
+    .pros:nth-child(2), .pros:nth-child(4){
+        flex-direction: column-reverse;
+    }
+
+    .copyright{
+        font-size: 16px;
+    }
 }
